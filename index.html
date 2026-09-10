@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtador de Links</title>
+    <!-- Link para o arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Encurtador de Links</h1>
+        <p>Cole seu link longo abaixo para encurtar instantaneamente:</p>
+
+        <!-- Formulário/Área de input -->
+        <div class="input-group">
+            <input type="url" id="urlInput" placeholder="https://exemplo.com/seu-link-longo" required>
+            <button id="shortenBtn">Encurtar</button>
+        </div>
+
+        <!-- Área onde o resultado vai aparecer -->
+        <div id="resultContainer" class="hidden">
+            <p>Seu link encurtado:</p>
+            <div class="result-box">
+                <input type="text" id="shortUrl" readonly>
+                <button id="copyBtn">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link para o arquivo JavaScript (o 'defer' garante que o script roda após carregar o HTML) -->
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Configuração básica e reset de margens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Fundo alterado para degradê com rosa #FF69B4 */
+    background: linear-gradient(135deg, #667eea 0%, #FF69B4 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Caixa principal do aplicativo */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    color: #4a5568;
+    font-size: 24px;
+}
+
+.container p {
+    margin-bottom: 20px;
+    color: #718096;
+    font-size: 14px;
+}
+
+/* Grupo de input e botão principal */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+input[type="url"], input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input[type="url"]:focus, input[type="text"]:focus {
+    /* Borda focada ainda combina com o azul original */
+    border-color: #667eea; 
+}
+
+button {
+    /* Botão alterado para rosa #FF69B4 */
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    /* Cor de hover um pouco mais escura que o rosa */
+    background-color: #e05a9e;
+}
+
+/* Classe utilitária para esconder elementos */
+.hidden {
+    display: none;
+}
+
+/* Caixa do resultado gerado */
+#resultContainer {
+    margin-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+    text-align: left;
+}
+
+#resultContainer p {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.result-box {
+    display: flex;
+    gap: 8px;
+}
+
+.result-box input {
+    background-color: #f7fafc;
+    color: #4a5568;
+}
+
+.result-box button {
+    /* O botão verde de "Copiar" permanece verde para dar contraste */
+    background-color: #48bb78;
+    white-space: nowrap;
+}
+
+.result-box button:hover {
+    background-color: #38a169;
+}
