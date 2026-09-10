@@ -33,4 +33,4 @@ Se você quiser rodar este projeto no seu computador, siga os passos abaixo:
    ```bash
    git clone [https://github.com/euangelica/encurtador-de-links.git]
 
-   Desenvolvido com 💖 por Angelica
+Desenvolvido com 💖 por Angelica
