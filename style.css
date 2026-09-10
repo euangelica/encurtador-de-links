@@ -117,3 +117,35 @@ button:hover {
 .result-box button:hover {
     background-color: #38a169;
 }
+
+/* Atualize o body para permitir empurrar o rodapé para baixo */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #FF69B4 100%);
+    min-height: 100vh; /* Mudamos de height para min-height */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna (caixa em cima, rodapé embaixo) */
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Dá uma margem para em telas menores o conteúdo não colar nas bordas */
+}
+
+/* Estilização do Rodapé fora do quadro */
+.rodape-site {
+    margin-top: 20px; /* Distância entre o quadro branco e o rodapé */
+    text-align: center;
+    color: #ffffff; /* Letra branca para destacar no fundo colorido */
+    font-size: 13px;
+}
+
+/* Estilo do link do seu LinkedIn no rodapé */
+.link-rodape {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.link-rodape:hover {
+    color: #f0f0f0;
+}
